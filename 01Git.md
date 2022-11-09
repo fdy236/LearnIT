@@ -1,12 +1,31 @@
 # Git教程
 ## 总结
-git init
-git add <file>  //可反复多次使用，添加多个文件。提交一次
-git commit -m <message>
 
-git status
+```java
+$ git init
+$ git add <file>  //可反复多次使用，添加多个文件。提交一次
+$ git commit -m <message>
+$ git status
+$ git diff <file>
+    
+    
+$ git checkout -b dev	//创建并切换分支
+git switch -c dev		//创建并切换分支
+/*
+等同于
+$ git branch dev		//创建dev分支
+$ git checkout dev		//切换到dev分支
+$ git switch dev		//切换到dev分支,建议使用这个	
+*/
+    
+$ git branch			//查看分支
+$ git merge dev			//合并：命令用于合并指定分支到当前分支。合并后，再查看readme.txt的内容，就可以看到，和dev分支的最新提交是完全一样的。
+$ git branch -d dev		//合并后删除分支
+```
 
-git diff <file>
+
+
+
 
 ## 安装-配置Git
 ### 配置名字和Email地址
@@ -80,6 +99,7 @@ $ git checkout -b dev	//创建并切换分支
 等同于
 $ git branch dev		//创建dev分支
 $ git checkout dev		//切换到dev分支
+$ git switch dev		//切换到dev分支	
 */
 $ git branch			//查看分支
 $ git merge dev			//合并：命令用于合并指定分支到当前分支。合并后，再查看readme.txt的内容，就可以看到，和dev分支的最新提交是完全一样的。
