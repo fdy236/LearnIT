@@ -83,4 +83,5 @@ $ git checkout dev		//切换到dev分支
 */
 $ git branch			//查看分支
 $ git merge dev			//合并：命令用于合并指定分支到当前分支。合并后，再查看readme.txt的内容，就可以看到，和dev分支的最新提交是完全一样的。
+$ git branch -d dev		//合并后删除分支
 ```
