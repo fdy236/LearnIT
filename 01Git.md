@@ -72,3 +72,15 @@ $ git config --global user.email "email@example.com"
 
    1. 查看命令历史
 
+## 分支管理
+
+```java
+$ git checkout -b dev	//创建并切换分支
+/*
+等同于
+$ git branch dev		//创建dev分支
+$ git checkout dev		//切换到dev分支
+*/
+$ git branch			//查看分支
+```
+
