@@ -48,5 +48,27 @@ $ git config --global user.email "email@example.com"
 ### 版本回退
 
 1. git status
+
 2. git diff <file>
+
+3. git log 
+
+   1. 查看提交到Git仓库的版本数量
+
+   2. git log --pretty=oneline
+
+      **[out]**:27ef872791a51baa20b335e820f44b0dbbae872b (HEAD -> master, origin/master, origin/HEAD) my first commit
+      		1c3885b280e1f0345a1b455488a77479b3784d3b Initial commit
+
+4. git reset --hard HEAD^
+
+   1. 退回上一个版本
+
+5. git rest --hard 27ef872791
+
+   1. 退回指定版本
+
+6. git reflog
+
+   1. 查看命令历史
 
