@@ -1,7 +1,8 @@
 # Git教程
 ## 总结
-
+学习网址：https://www.liaoxuefeng.com/wiki/896043488029600
 ```
+
 $ git init
 $ git add <file>  //可反复多次使用，添加多个文件。提交一次
 $ git commit -m <message>
