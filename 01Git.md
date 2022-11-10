@@ -110,14 +110,16 @@ $ git branch -d dev		//合并后删除分支
 
 ### 解决冲突
 
-<<<<<<< HEAD
-=======
 ```java
 $ git branch fdy
 $ git switch fdy
 $ git add .
 $ git commit -m "commit fdy of branch"
 $ git switch main
+$ git log --graph	//查看分支合并图
+/*
+git 用<<<<<,=======,>>>>>>标出不同分支内容，手动修改后可再次提交解决冲突
+当git
+*/
 ```
 
->>>>>>> fdy
