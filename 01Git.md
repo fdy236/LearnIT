@@ -1,7 +1,7 @@
 # Git教程
 ## 总结
 
-```java
+```
 $ git init
 $ git add <file>  //可反复多次使用，添加多个文件。提交一次
 $ git commit -m <message>
@@ -21,6 +21,22 @@ $ git switch dev		//切换到dev分支,建议使用这个
 $ git branch			//查看分支
 $ git merge dev			//合并：命令用于合并指定分支到当前分支。合并后，再查看readme.txt的内容，就可以看到，和dev分支的最新提交是完全一样的。
 $ git branch -d dev		//合并后删除分支
+    
+# git branch dev
+# git switch dev
+# git stash		//保存当前工作现场
+# git stash list 
+# git stash apply //恢复现场
+# git stash apply stash@{0}//恢复指定现场
+# git stash pop   //删除stash并恢复现场
+# git cherry-pack 4c805e2	// 复制一个特定的提交到当前分支
+远程协助
+$ git remote
+$ git remote -v
+$ git push origin main
+$ git push origin dev
+$ git clone git@github.com:michaelliao/learngit.git
+$ git checkout -b dev origin/dev	//创建远程origin的dev分支到本地
 ```
 
 
@@ -95,7 +111,7 @@ $ git config --global user.email "email@example.com"
 
 ### 创建、切换、查看、合并
 
-```java
+```
 $ git checkout -b dev	//创建并切换分支
 /*
 等同于
@@ -106,6 +122,17 @@ $ git switch dev		//切换到dev分支
 $ git branch			//查看分支
 $ git merge dev			//合并：命令用于合并指定分支到当前分支。合并后，再查看readme.txt的内容，就可以看到，和dev分支的最新提交是完全一样的。
 $ git branch -d dev		//合并后删除分支
+
+$ git branch fdy
+$ git switch fdy
+$ git add .
+$ git commit -m "commit fdy of branch"
+$ git switch main
+$ git log --graph	//查看分支合并图
+/*
+git 用<<<<<,=======,>>>>>>标出不同分支内容，手动修改后可再次提交解决冲突
+当git
+*/
 ```
 
 ### 解决分支冲突
@@ -155,7 +182,7 @@ $ git clone git@github.com:michaelliao/learngit.git
 $ git checkout -b dev origin/dev	//创建远程origin的dev分支到本地
 ```
 
-#### 多人协作工作模式
+**多人协作工作模式**
 
 1. 首先，可以试图用`git push origin <branch-name>`推送自己的修改；
 2. 如果推送失败，则因为远程分支比你的本地更新，需要先用`git pull`试图合并；
@@ -164,7 +191,9 @@ $ git checkout -b dev origin/dev	//创建远程origin的dev分支到本地
 
 如果`git pull`提示`no tracking information`，则说明本地分支和远程分支的链接关系没有创建，用命令`git branch --set-upstream-to <branch-name> origin/<branch-name>`。
 
-#### 小结
+
+
+**小结**
 
 - 查看远程库信息，使用`git remote -v`；
 - 本地新建的分支如果不推送到远程，对其他人就是不可见的；
