@@ -123,3 +123,14 @@ git 用<<<<<,=======,>>>>>>标出不同分支内容，手动修改后可再次�
 */
 ```
 
+### Bug分支
+
+保持当前分支上下文，创建bug分支修复main分支的bug
+
+```java
+# git branch dev
+# git switch dev
+# git stash		//保存当前工作现场
+
+```
+
