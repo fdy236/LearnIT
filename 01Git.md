@@ -108,7 +108,7 @@ $ git merge dev			//合并：命令用于合并指定分支到当前分支。合
 $ git branch -d dev		//合并后删除分支
 ```
 
-### 解决冲突
+### 解决分支冲突
 
 ```java
 $ git branch fdy
