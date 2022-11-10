@@ -93,6 +93,8 @@ $ git config --global user.email "email@example.com"
 
 ## 分支管理
 
+### 创建、切换、查看、合并
+
 ```java
 $ git checkout -b dev	//创建并切换分支
 /*
@@ -105,3 +107,6 @@ $ git branch			//查看分支
 $ git merge dev			//合并：命令用于合并指定分支到当前分支。合并后，再查看readme.txt的内容，就可以看到，和dev分支的最新提交是完全一样的。
 $ git branch -d dev		//合并后删除分支
 ```
+
+### 解决冲突
+
